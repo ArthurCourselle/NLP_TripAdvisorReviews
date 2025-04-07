@@ -1,38 +1,38 @@
-# Prompt Injection Detection Project
+# **Dataset Datasheet: TripAdvisor Review Rating**
 
-This project presents a prompt injection detection model based on various Natural Language Processing (NLP) techniques. The model is trained on the SPML dataset.
+## **Dataset Summary**
+The **TripAdvisor Review Rating** dataset consists of user reviews from TripAdvisor, labeled with star ratings. This dataset is useful for sentiment analysis, text classification, and natural language processing (NLP) tasks, such as training models to predict review ratings based on review content.
 
-## Datasheet
+## **Dataset Details**
+- **Dataset Name**: TripAdvisor Review Rating  
+- **Source**: [Hugging Face Dataset Hub](https://huggingface.co/datasets/jniimi/tripadvisor-review-rating)  
+- **Provider**: jniimi  
+- **Domain**: Online reviews, Travel & Tourism  
+- **Language**: English  
+- **Number of Records**: 200k rows
+- **License**: Apache-2.0  
 
-**[SPML Dataset](https://huggingface.co/datasets/reshabhs/SPML_Chatbot_Prompt_Injection?row=0)**
+## **Data Structure**
+- **Features**:
+  - `text` (string): The review text written by a user.
+  - `rating` (integer): The corresponding star rating (1-5).
 
-### Description
-The SPML (System Prompt Meta Language) dataset is designed to evaluate and enhance the security of chatbots based on large language models (LLMs). It includes system prompts and user inputs, both safe and malicious, to test the robustness of chatbots against prompt injection attacks.
+## **Intended Use**
+- Sentiment analysis
+- Star rating prediction
+- Opinion mining
+- NLP model training and evaluation  
 
-### Source
-University of Washington, Paul G. Allen School of Computer Science & Engineering
+## **Potential Applications**
+- Training machine learning models for sentiment classification
+- Understanding customer satisfaction trends
+- Analyzing travel and tourism reviews for businesses
 
-### Data Format
-- **File Type:** CSV
-- **Data Structure:** The dataset is described in a CSV file containing examples of system prompts and user interactions.
+## **Ethical Considerations & Risks**
+- **Bias**: The dataset may have biases based on the user demographics, review styles, or cultural factors.
+- **Privacy**: Ensure that reviews do not contain personally identifiable information (PII).
+- **Misuse**: Models trained on this dataset should be tested to avoid overfitting and unfair ratings.
 
-### Dataset Size
-- **Total Records:** 800 different system prompts and 2.9k different user inputs, totaling 16k rows.
-- **Size:** Not specified
-
-### Variables/Columns
-- **System Prompts**
-- **User Inputs (safe and malicious)**
-- **Security Labels (safe/malicious)**
-
-### Data Types
-- **Text (system prompts and user inputs)**
-- **Categories (security labels)**
-
-### Preprocessing
-- Data cleaning to remove outliers
-
-### Potential Uses
-- Evaluating the security of LLM-based chatbots
-- Developing methods to detect and prevent prompt injection attacks
-- Writing prompt injections to benchmark NLP models
+## **References**
+- Dataset hosted on Hugging Face: [TripAdvisor Review Rating](https://huggingface.co/datasets/jniimi/tripadvisor-review-rating)  
+- TripAdvisor Website: [https://www.tripadvisor.com](https://www.tripadvisor.com)  
